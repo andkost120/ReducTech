@@ -36,5 +36,8 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: `gatsby-plugin-loadable-components-ssr`,
+    },
   ],
 }

@@ -5,12 +5,14 @@ import ServiceItem from "../components/ServiceItem"
 import { Brain, HomeHero } from "../utils/imgImport"
 import { blogs, products, reviews, services } from "../utils/staticData"
 import ProductItem from "../components/ProductItem"
-import OwlCarousel from "react-owl-carousel"
+// import OwlCarousel from "react-owl-carousel"
+import ReviewItem from "../components/ReviewItem"
 import "owl.carousel/dist/assets/owl.carousel.css"
 import "owl.carousel/dist/assets/owl.theme.default.css"
-import ReviewItem from "../components/ReviewItem"
 import ContactSection from "../components/ContactSection"
 import BlogItem from "../components/BlogItem"
+import Loadable from "@loadable/component"
+const OwlCarousel = Loadable(() => import("react-owl-carousel"))
 
 const options = {
   items: 3,
